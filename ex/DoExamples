@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+WS=(ex/*.ex)
+
+OK=yes
+
+case $1 in
+local)	abc=./abc;;
+*)	abc=abc;;
+esac
+
+for ws in "${WS[@]}"
+do
+	echo " "
+	echo "Testing $ws example ..."
+	echo " "
+	$abc -g "$PWD" -w ./"$ws" <"$ws.in" | tee out
+	echo " "
+	if cmp -s out "$ws.out"
+	then
+		echo "... $ws example OK ..."
+	else
+		echo "... $ws example NOT OK ..."
+		echo "Differences: Compared to what was expected"
+		diff -u --color=auto "$ws.out" out
+		OK=no
+	fi
+	echo " "
+	echo "... $ws example done"
+done
+
+echo " "
+case $OK in
+no)
+	echo "One or more examples failed; check output above";
+	exit 1;;
+yes)
+	case $1 in
+	local)	echo "If all examples were OK, try the ABC editor with 'make try_editor'.";;
+	*)	echo "If all examples were OK, try the ABC editor with TryEditor.";;
+	esac
+esac

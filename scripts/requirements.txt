@@ -1,0 +1,6 @@
+click==8.4.1
+joblib==1.5.3
+nltk==3.9.4
+regex==2026.5.9
+tqdm==4.67.3
+clang==21.1.7

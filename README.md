@@ -1,4 +1,5 @@
-ABC 2.0
+****ABC 2.0****
+
 A modern, concise, and accessible programming language built for the future of clear software development.
 
 ABC 2.0 is a ground-up re-implementation and evolution of the legendary ABC programming language originally created at CWI (Centrum Wiskunde & Informatica) in the 1980s—the language that served as the primary inspiration for Python.

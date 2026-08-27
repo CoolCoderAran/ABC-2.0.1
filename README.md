@@ -1,48 +1,43 @@
-ABC 2.0
-A modern, concise, and accessible programming language built for the future of clear software development.
+# ABC 2.0 Programming Language
 
-ABC 2.0 is a ground-up re-implementation and evolution of the legendary ABC programming language originally created at CWI (Centrum Wiskunde & Informatica) in the 1980s—the language that served as the primary inspiration for Python.
-ABC 2.0 preserves the original language's emphasis on clean syntax, intuitive high-level data types, and readability, while introducing a modernized execution engine, modern tooling, and enterprise compliance readiness.
-Key Features
-Readable Syntax: Designed to minimize boilerplate and keep code structured and expressive.
-Modern Toolchain: Built from the ground up with high-performance execution and seamless developer tooling.
-Zero Telemetry: Total privacy out of the box. Operates entirely locally without data collection or tracking.
-Historic Foundation: Built upon the design principles of Leo Geurts, Lambert Meertens, and Steven Pemberton, tailored for 21st-century software engineering.
-Quick Start
-Installation
-Bash
+[![License: ABC 2.0](https://img.shields.io/badge/License-ABC%20v2.0-blue.svg)](#license)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
+[![Compliance: Zero--Telemetry](https://img.shields.io/badge/Telemetry-Zero-success.svg)](#privacy--data-autonomy)
+
+> **Modern simplicity, elegant design, total autonomy.**  
+> ABC 2.0 is the modern successor to the influential ABC programming language originally designed at CWI (Centrum Wiskunde & Informatica).
+
+---
+
+## 📌 Executive Overview
+
+ABC 2.0 is a modern framework of the ABC programming language. Built from the ground up to serve contemporary software engineering needs while preserving the groundbreaking readability and human-centric design of its predecessor, ABC 2.0 provides an intuitive environment for learners, researchers, and professional developers alike.
+
+Operated under a mission-driven Public Benefit Corporation (PBC), ABC 2.0 ensures that all project growth, community investments, and commercial operations directly feed back into language dominance, ecosystem stability, and open accessibility.
+
+---
+
+## 🏛️ Historical Legacy
+
+In the late 1970s and 1980s, **Leo Geurts, Lambert Meertens, and Steven Pemberton** at **CWI (Amsterdam)** created ABC—a language specifically designed to make programming interactive, elegant, and accessible. ABC's high-level data types, structured control flow, and clean syntax famously served as the direct inspiration for Guido van Rossum when creating **Python**.
+
+ABC 2.0 carries forward this rich heritage into the modern era:
+* **Modernized Implementation:** Built on a modern LLVM JIT interpreter and compiler, ensuring full compatibility with modern operating systems and compilation targets while solving ABC's biggest bottlenecks.
+* **Modernized Toolchain:** Native support for modern developer workflows, LSP (Language Server Protocol) tooling, fast execution runtimes, and strict security compliance.
+* **Preserved DNA:** Maintains the high-level readability and expressive power that made original ABC a milestone in language design.
+
+---
+
+## 🚀 Quickstart Guide
+
+### Installation
+
+Clone the repository and build the toolchain using your system's native environment:
+
+```bash
 # Clone the repository
-git clone https://github.com/your-org/abc2.git
-
-# Navigate to the directory
+git clone [https://github.com/abc-language/abc2.git](https://github.com/abc-language/abc2.git)
 cd abc2
 
-# Build the compiler
-cargo build --release
-Running Your First Program
-Create a file named hello.abc:
-
-WRITE "Hello, ABC 2.0!"
-Execute it with the CLI:
-Bash
-abc run hello.abc
-
-
-Repository Structure
-Plaintext
-├── .github/          # CI/CD workflows and issue templates
-├── cli/              # Command-line interface and tool binaries
-├── compiler/         # Core lexer, parser, AST, and code generator
-├── docs/             # Language specifications and manuals
-├── stdlib/           # Built-in standard library
-├── tests/            # Test suite and syntax validations
-├── CONTRIBUTING.md   # Guidelines for contributing
-└── LICENSE           # ABC Software License (Version 2.0)
-License & Governance
-ABC 2.0 is distributed under the ABC Software License (Version 2.0).
-This modern license honors the historical CWI distribution model while ensuring source integrity, brand protection, explicit zero-telemetry privacy guarantees, and enterprise compatibility.
-Original Language Concepts: Copyright (c) Stichting Mathematisch Centrum (CWI), Amsterdam.
-ABC 2.0 Implementation: Copyright (c) 2026 ABC Programming Language Project.
-See the full terms in the LICENSE file.
-Contributing
-We welcome contributions to the compiler, standard library, and documentation! Please review CONTRIBUTING.md before submitting pull requests or opening issues. All contributors agree to distribute their work under the ABC Software License v2.0.
+# Build the compiler toolchain
+make build

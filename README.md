@@ -21,11 +21,13 @@ cd abc2
 cargo build --release
 Running Your First Program
 Create a file named hello.abc:
-Code snippet
+
 WRITE "Hello, ABC 2.0!"
 Execute it with the CLI:
 Bash
-abc2 run hello.abc
+abc run hello.abc
+
+
 Repository Structure
 Plaintext
 ├── .github/          # CI/CD workflows and issue templates
